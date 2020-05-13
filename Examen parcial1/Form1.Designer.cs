@@ -43,7 +43,6 @@
             this.lbldepartamento.Size = new System.Drawing.Size(79, 13);
             this.lbldepartamento.TabIndex = 0;
             this.lbldepartamento.Text = "Departamentos";
-            this.lbldepartamento.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -61,7 +60,6 @@
             this.cbxdepartamento.Name = "cbxdepartamento";
             this.cbxdepartamento.Size = new System.Drawing.Size(121, 21);
             this.cbxdepartamento.TabIndex = 1;
-            this.cbxdepartamento.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 

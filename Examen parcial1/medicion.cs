@@ -17,7 +17,7 @@ namespace Examen_parcial1
             set => iddepartamento = value;
             get => iddepartamento;
         }
-        public string Departamento
+        public string Date
         {
             set => date = value;
             get => date;

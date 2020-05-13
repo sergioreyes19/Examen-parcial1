@@ -21,15 +21,6 @@ namespace Examen_parcial1
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -57,9 +48,7 @@ namespace Examen_parcial1
             cbxdepartamento.ValueMember = "Iddepartamento";
             //ahora lo enlazamos con nuestra lista de la misma forma que los otros controles
             cbxdepartamento.DataSource = departamentos;
-
             cbxdepartamento.Refresh();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,7 +59,6 @@ namespace Examen_parcial1
             DateTime dateTime = new DateTime();
             dateTime = DateTime.Now;
             string strDate = Convert.ToDateTime(dateTime).ToString("yy-MM-dd");
-
 
             string iddepartamento = cbxdepartamento.SelectedValue.ToString();
             string path = (@"C:\\Users\\Sergio Reyes\\source\\repos\\Examenparcial\\listado.txt");

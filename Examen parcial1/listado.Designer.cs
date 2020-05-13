@@ -29,46 +29,17 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iddepartamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iddepartamento,
-            this.departamento,
-            this.fecha,
-            this.cantidad});
             this.dataGridView1.Location = new System.Drawing.Point(35, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(584, 218);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // iddepartamento
-            // 
-            this.iddepartamento.HeaderText = "iddepartamento";
-            this.iddepartamento.Name = "iddepartamento";
-            // 
-            // departamento
-            // 
-            this.departamento.HeaderText = "departamento";
-            this.departamento.Name = "departamento";
-            // 
-            // fecha
-            // 
-            this.fecha.HeaderText = "fecha";
-            this.fecha.Name = "fecha";
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "cantiad lluvia";
-            this.cantidad.Name = "cantidad";
             // 
             // listado
             // 
@@ -78,6 +49,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "listado";
             this.Text = "listado";
+            this.Load += new System.EventHandler(this.listado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -86,9 +58,5 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iddepartamento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn departamento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
     }
 }
