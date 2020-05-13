@@ -30,7 +30,7 @@
         {
             this.lbldepartamento = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxdepartamento = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -54,13 +54,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Cantidad de lluvia";
             // 
-            // comboBox1
+            // cbxdepartamento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(397, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cbxdepartamento.FormattingEnabled = true;
+            this.cbxdepartamento.Location = new System.Drawing.Point(397, 64);
+            this.cbxdepartamento.Name = "cbxdepartamento";
+            this.cbxdepartamento.Size = new System.Drawing.Size(121, 21);
+            this.cbxdepartamento.TabIndex = 1;
+            this.cbxdepartamento.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -85,11 +86,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxdepartamento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbldepartamento);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,7 +101,7 @@
 
         private System.Windows.Forms.Label lbldepartamento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxdepartamento;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
     }
